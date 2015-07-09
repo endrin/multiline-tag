@@ -1,0 +1,27 @@
+{
+  "name": "multiline-tag",
+  "version": "0.0.1",
+  "description": "Tags for template strings making them behave like coffee multiline strings",
+  "main": "multiline-tag",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -u bdd -R nyan -t 500 --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/endrin/multiline-tag.git"
+  },
+  "keywords": [
+    "es6-tag",
+    "string",
+    "template"
+  ],
+  "author": "endrin",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/endrin/multiline-tag/issues"
+  },
+  "homepage": "https://github.com/endrin/multiline-tag#readme"
+}
