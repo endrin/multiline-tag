@@ -1,5 +1,4 @@
-var chai = require('chai'),
-    expect = chai.expect;
+var expect = require('chai').expect;
 
 var Multiline = require('../lib/multiline-tag').Multiline;
 
