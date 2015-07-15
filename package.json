@@ -1,6 +1,6 @@
 {
   "name": "multiline-tag",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "Tags for template strings making them behave like coffee multiline strings",
   "main": "./lib/multiline-tag.js",
   "directories": {
