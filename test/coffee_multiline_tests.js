@@ -3,8 +3,6 @@ var chai = require('chai'),
 
 var Multiline = require('../lib/multiline-tag').Multiline;
 
-/* jshint -W024 */
-/* jshint expr:true */
 /* jshint esnext:true */
 
 describe("Multiline tag tests", function () {
