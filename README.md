@@ -1,13 +1,13 @@
 # multiline-tag
 
 Module providing two tags for ES2015 [template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings) which allow to mimic behavior of CoffeeScript's [Multiline and Block strings](http://coffeescript.org/#strings).
-<!---
+
 ## Install
 
 ```sh
 $ npm install --save multiline-tag
 ```
--->
+
 
 ## Usage
 
