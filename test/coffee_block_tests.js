@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 
-var Block = require('../lib/multiline-tag').Block;
+var Block = require('../index').Block;
 
 /* jshint esnext:true */
 
