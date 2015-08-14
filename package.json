@@ -26,7 +26,10 @@
     "email": "yon.drin@gmail.com",
     "url": "http://github.com/endrin"
   },
-  "license": "WTFPL",
+  "license": {
+    "type": "WTFPL",
+    "url": "http://www.wtfpl.net/txt/copying/"
+  },
   "bugs": {
     "url": "https://github.com/endrin/multiline-tag/issues"
   },
