@@ -21,6 +21,7 @@ module.exports = {
           }, ''),
         lines = fullString.split('\n'),
         minIndent = lines
+          .slice(1)
           .filter(function (line) { return line.match(/^\s*$/) === null;})
           .reduce(function(result, line) {
             return Math.min(line.match(/^\s*/)[0].length, result);
@@ -30,6 +31,6 @@ module.exports = {
     return lines
       .map(function (s) { return s.replace(clearRX, ''); })
       .join('\n')
-      .trim();
+      .replace(/^\n|\n\s*$/g,'');
   }
 };

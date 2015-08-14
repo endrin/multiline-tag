@@ -1,13 +1,14 @@
 {
   "name": "multiline-tag",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Tags for template strings making them behave like coffee multiline strings",
   "main": "./index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -u bdd -R nyan -t 500 --recursive"
+    "test": "mocha -u bdd -R nyan -t 500 --recursive",
+    "watch": "mocha -u bdd -R nyan -t 500 --recursive --watch"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,9 @@
   "keywords": [
     "es6-tag",
     "string",
-    "template"
+    "template",
+    "multiline",
+    "heredoc"
   ],
   "author": {
     "name": "endrin",
