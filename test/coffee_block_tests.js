@@ -45,4 +45,18 @@ describe("Block tag tests", function () {
     expect(example).to.be.equal(" line 0\nshould not be relevant\n  to the indent level");
   });
 
+  it("should prevent interpolated values from breaking indentation", function () {
+    var different_ident = Block`
+      a
+        b
+    `;
+    var example = Block`
+      c
+        ${different_ident}
+        d
+    `;
+    expect(example).to.be.equal("c\n  a\n  b\n  d");
+    // TODO: Currently only first line of multiline variable will have correct indentation. This works same as in Coffee, but doesn't look good. I need to figure how to align all lines in such variables to one level, and then update this test and the Block function.
+  });
+
 });

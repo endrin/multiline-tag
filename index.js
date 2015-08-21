@@ -15,12 +15,8 @@ module.exports = {
     var template = arguments[0],
         variables = Array.prototype.slice.call(arguments, 1).concat('');
 
-    var fullString = template
-          .reduce(function (result, line, idx) {
-            return result + line + variables[idx];
-          }, ''),
-        lines = fullString.split('\n'),
-        minIndent = lines
+    var rawLines = template.join('#').split('\n'),
+        minIndent = rawLines
           .slice(1)
           .filter(function (line) { return line.match(/^\s*$/) === null;})
           .reduce(function(result, line) {
@@ -28,7 +24,11 @@ module.exports = {
           }, Infinity),
         clearRX = new RegExp('^\\s{' + minIndent + '}', 'gm');
 
-    return lines
+    return template
+      .reduce(function (result, line, idx) {
+        return result + line + variables[idx];
+      }, '')
+      .split('\n')
       .map(function (s) { return s.replace(clearRX, ''); })
       .join('\n')
       .replace(/^\n|\n\s*$/g,'');
