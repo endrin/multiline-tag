@@ -46,13 +46,13 @@ describe("Block tag tests", function () {
   });
 
   it("should prevent interpolated values from breaking indentation", function () {
-    var different_ident = Block`
+    var different_indent = Block`
       a
         b
     `;
     var example = Block`
       c
-        ${different_ident}
+        ${different_indent}
         d
     `;
     expect(example).to.be.equal("c\n  a\n  b\n  d");
